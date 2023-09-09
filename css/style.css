@@ -1,6 +1,5 @@
 html {
 	box-sizing: border-box;
-	background-color: grey;
 }
 *,
 *::after,
@@ -9,11 +8,16 @@ html {
 	margin: 0;
 	padding: 0;
 }
+html,
+body {
+	height: 100%;
+}
 body {
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	color: #151515;
+	line-height: 1.3;
 }
 ul {
 	list-style: none;
@@ -21,6 +25,12 @@ ul {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+.wrapper {
+	/* Чтобы m-h100% сработал,нужно родителю,а это бади и хтмл задать height100% */
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .container {
 	max-width: 1230px;
@@ -31,11 +41,7 @@ header {
 	background-color: #151515;
 }
 /* ----- HEADER ------------------------------------------------------------------------ */
-.wrapper {
-	
-}
 .header {
-
 }
 .header-main {
 	background-color: transparent;
@@ -64,8 +70,67 @@ header {
 	color: #fff;
 	line-height: 19px;
 }
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
+/* ----- FOOTER ------------------------------------------------------------------------ */
+.footer {
+	background-color: #151515;
+	color: #fff;
+	padding: 50px 0 32px;
+}
+.footer__menu {
+	display: flex;
+	justify-content: space-around;
+	margin: 0px 0px 50px 0px;
+}
+.footer__menu-list {
+	max-width: 250px;
+}
+.footer__menu-item + .footer__menu-item {
+	padding: 20px 0px 0px 0px;
+}
+.footer__menu-title {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 0px 0px 20px 0px;
+}
+.footer__menu-link {
+}
+.app {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin: 0px 0px 52px 0px;
+}
+.app__item {
+}
+.app_item-link {
+}
+.app__item-img {
+}
+.footer__copy {
+	max-width: 808px;
+	margin: 0 auto 30px;
+	text-align: center;
+}
+.footer__copy span {
+	border-bottom: 1px solid #fff;
+}
+.footer__copy-text {
+}
+.copy__nav {
+}
+.copy__nav-list {
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+}
+.copy__nav-item {
+}
+.copy__nav-link {
+}
+/* ----- MAIN ------------------------------------------------------------------------ */
+.main {
+	flex-grow: 1;
+}
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
