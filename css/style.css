@@ -26,6 +26,13 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+.section-title {
+	margin-bottom: 50px;
+	font-size: 48px;
+	line-height: 58px;
+	font-weight: 700;
+	text-align: center;
+}
 .wrapper {
 	/* Чтобы m-h100% сработал,нужно родителю,а это бади и хтмл задать height100% */
 	min-height: 100%;
@@ -198,7 +205,32 @@ header {
 .swiper-pagination-bullets.swiper-pagination-horizontal {
 	bottom: 50px;
 }
-/* ----------------------------------------------------------------------------- */
+/* ----- WHY-LEASE ------------------------------------------------------------------------ */
+.why-lease {
+	padding: 150px 0;
+}
+.why-lease__title {
+}
+.why-lease__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+	text-align: center;
+}
+.why-lease__item {
+}
+.why-lease__item-img {
+	margin-bottom: 30px;
+}
+.why-lease__item-title {
+	margin-bottom: 30px;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+}
+.why-lease__item-text {
+	text-align: left;
+}
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
