@@ -45,6 +45,10 @@ header {
 }
 .header-main {
 	background-color: transparent;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	right: 0;
 }
 .header__inner {
 	padding: 40px 0px 45px 0px;
@@ -131,7 +135,69 @@ header {
 .main {
 	flex-grow: 1;
 }
-/* ----------------------------------------------------------------------------- */
+.top {
+	color: #fff;
+	text-align: center;
+	padding: 250px 0 50px;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	right: 0;
+}
+.container {
+}
+.top__title {
+	padding: 0px 0px 40px 0px;
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 116px;
+}
+.top__link {
+	background-color: #151515;
+	padding: 23px;
+	max-width: 430px;
+	width: 100%;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 44px;
+	font-weight: 700;
+}
+/* ------ SLIDER ----------------------------------------------------------------------- */
+.swiper::after {
+	content: '';
+	background: rgba(21,21,21, .3);
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.swiper-slide {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.swiper-pagination-bullet {
+	width: 120px;
+	height: 3px ;
+	background-color: #151515;
+	border-radius: 0;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active {
+	height: 6px;
+	background-color: #fff;
+	border-radius: 0;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 15px;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 50px;
+}
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
