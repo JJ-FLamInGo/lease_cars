@@ -26,6 +26,13 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+.section-title {
+	margin-bottom: 50px;
+	font-size: 48px;
+	line-height: 58px;
+	font-weight: 700;
+	text-align: center;
+}
 .wrapper {
 	/* Чтобы m-h100% сработал,нужно родителю,а это бади и хтмл задать height100% */
 	min-height: 100%;
@@ -45,6 +52,10 @@ header {
 }
 .header-main {
 	background-color: transparent;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	right: 0;
 }
 .header__inner {
 	padding: 40px 0px 45px 0px;
@@ -131,8 +142,142 @@ header {
 .main {
 	flex-grow: 1;
 }
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
+.top {
+	color: #fff;
+	text-align: center;
+	padding: 250px 0 50px;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	right: 0;
+}
+.container {
+}
+.top__title {
+	padding: 0px 0px 40px 0px;
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 116px;
+}
+.top__link {
+	background-color: #151515;
+	padding: 23px;
+	max-width: 430px;
+	width: 100%;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 44px;
+	font-weight: 700;
+}
+/* ------ SLIDER ----------------------------------------------------------------------- */
+.swiper::after {
+	content: '';
+	background: rgba(21,21,21, .3);
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.swiper-slide {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.swiper-pagination-bullet {
+	width: 120px;
+	height: 3px ;
+	background-color: #151515;
+	border-radius: 0;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active {
+	height: 6px;
+	background-color: #fff;
+	border-radius: 0;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 15px;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 50px;
+}
+/* ----- WHY-LEASE ------------------------------------------------------------------------ */
+.why-lease {
+	padding: 150px 0;
+}
+.why-lease__title {
+}
+.why-lease__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+	text-align: center;
+}
+.why-lease__item {
+}
+.why-lease__item-img {
+	margin-bottom: 30px;
+}
+.why-lease__item-title {
+	margin-bottom: 30px;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+}
+.why-lease__item-text {
+	text-align: left;
+}
+/* ----- HOW-DOES ------------------------------------------------------------------------ */
+.how-does {
+	margin-bottom: 150px;
+}
+.how-does__inner {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.how-does__text {
+}
+.how__does-title {
+	font-size: 24px;
+	font-weight: 700;
+	padding-top: 50px;
+}
+.how__does-list {
+	padding: 50px 0 70px;
+	counter-reset: MyCounter;
+}
+.how__does-item {
+	list-style-type: none;
+	width: 270px;
+	position: relative;
+	margin-left: auto;
+	box-sizing: content-box;
+	padding: 19px 0 19px 240px;
+	min-height: 63px;
+}
+.how__does-item + .how__does-item {
+	margin-top: 40px;
+}
+.how__does-item::before {
+	counter-increment: MyCounter;
+	content: counter(MyCounter);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #06F;
+	font-size: 48px;
+	font-weight: 700;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 /* ----------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
